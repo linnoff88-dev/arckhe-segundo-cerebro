@@ -53,18 +53,18 @@
         { "id": "1-4", "title": "Obsidian como memória", "topics": 6, "href": "curso/trilha1/modulo-1-4.html" }
       ]},
       { "n": "2", "title": "Passo a passo prático", "modules": [
-        { "id": "2-1", "title": "Pré-requisitos e instalação", "topics": 6, "href": "curso/trilha2/modulo-2-1.html" },
+        { "id": "2-1", "title": "Pré-requisitos e instalaçêo", "topics": 6, "href": "curso/trilha2/modulo-2-1.html" },
         { "id": "2-2", "title": "Escolher e preparar a fonte", "topics": 6, "href": "curso/trilha2/modulo-2-2.html" },
         { "id": "2-3", "title": "Rodar o Graphify e ler o grafo", "topics": 6, "href": "curso/trilha2/modulo-2-3.html" },
         { "id": "2-4", "title": "Gerar o vault Obsidian", "topics": 6, "href": "curso/trilha2/modulo-2-4.html" },
         { "id": "2-5", "title": "Abrir no Obsidian e conectar fontes", "topics": 6, "href": "curso/trilha2/modulo-2-5.html" },
-        { "id": "2-6", "title": "As 4 estratégias de integração", "topics": 6, "href": "curso/trilha2/modulo-2-6.html" }
+        { "id": "2-6", "title": "As 4 estratégias de integraçêo", "topics": 6, "href": "curso/trilha2/modulo-2-6.html" }
       ]},
       { "n": "3", "title": "Uso real e avançado", "modules": [
         { "id": "3-1", "title": "Perguntar usando o grafo", "topics": 6, "href": "curso/trilha3/modulo-3-1.html" },
         { "id": "3-2", "title": "Claude OS command center", "topics": 6, "href": "curso/trilha3/modulo-3-2.html" },
         { "id": "3-3", "title": "Código vs documentos", "topics": 6, "href": "curso/trilha3/modulo-3-3.html" },
-        { "id": "3-4", "title": "Manutenção e troubleshooting", "topics": 6, "href": "curso/trilha3/modulo-3-4.html" }
+        { "id": "3-4", "title": "Manutençêo e troubleshooting", "topics": 6, "href": "curso/trilha3/modulo-3-4.html" }
       ]}
     ]
   }
@@ -417,7 +417,7 @@ graphify install</pre>
 ├── graph.json          # fonte de verdade — tudo deriva daqui
 ├── graph.html          # visual interativo (abre no navegador)
 ├── GRAPH_REPORT.md     # auditoria: god nodes + perguntas sugeridas
-└── cache/              # cache por arquivo (não re-chama o LLM à toa)</pre>
+└── cache/              # cache por arquivo (nêo re-chama o LLM à toa)</pre>
 </div>
 <p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-3-t3-p2">
               The supporting player is the folder <code class="font-mono text-xs bg-dark-900 px-1 rounded">cache/</code>: it stores the result per file (identified by the <em>hash</em> of the content) so you don’t pay for the LLM call again when nothing has changed. That’s why the second run is usually much faster than the first.
@@ -655,7 +655,7 @@ graphify extract &lt;./src&gt;</pre>
 <script>
     if (window.INEMA && typeof window.INEMA.init === 'function') {
       window.INEMA.init();
-      if (INEMA.registerCheck) INEMA.registerCheck('modulo-1-3#q1', { answer: 1, explain: { 0: 'O graph.html é onde você visualiza, mas ele é gerado a partir do graph.json — não é a origem.', 1: 'Isso. O graph.json é o grafo completo (entidades, relações, comunidades); o visual e o relatório derivam dele.', 2: 'O GRAPH_REPORT.md é a auditoria em texto (god nodes, perguntas sugeridas), mas também deriva do graph.json.' } });
+      if (INEMA.registerCheck) INEMA.registerCheck('modulo-1-3#q1', { answer: 1, explain: { 0: 'O graph.html é onde você visualiza, mas ele é gerado a partir do graph.json — nêo é a origem.', 1: 'Isso. O graph.json é o grafo completo (entidades, relações, comunidades); o visual e o relatório derivam dele.', 2: 'O GRAPH_REPORT.md é a auditoria em texto (god nodes, perguntas sugeridas), mas também deriva do graph.json.' } });
     }
   </script>
 </body>

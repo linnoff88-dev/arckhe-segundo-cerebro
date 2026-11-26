@@ -53,18 +53,18 @@
         { "id": "1-4", "title": "Obsidian como memória", "topics": 6, "href": "curso/trilha1/modulo-1-4.html" }
       ]},
       { "n": "2", "title": "Passo a passo prático", "modules": [
-        { "id": "2-1", "title": "Pré-requisitos e instalação", "topics": 6, "href": "curso/trilha2/modulo-2-1.html" },
+        { "id": "2-1", "title": "Pré-requisitos e instalaçêo", "topics": 6, "href": "curso/trilha2/modulo-2-1.html" },
         { "id": "2-2", "title": "Escolher e preparar a fonte", "topics": 6, "href": "curso/trilha2/modulo-2-2.html" },
         { "id": "2-3", "title": "Rodar o Graphify e ler o grafo", "topics": 6, "href": "curso/trilha2/modulo-2-3.html" },
         { "id": "2-4", "title": "Gerar o vault Obsidian", "topics": 6, "href": "curso/trilha2/modulo-2-4.html" },
         { "id": "2-5", "title": "Abrir no Obsidian e conectar fontes", "topics": 6, "href": "curso/trilha2/modulo-2-5.html" },
-        { "id": "2-6", "title": "As 4 estratégias de integração", "topics": 6, "href": "curso/trilha2/modulo-2-6.html" }
+        { "id": "2-6", "title": "As 4 estratégias de integraçêo", "topics": 6, "href": "curso/trilha2/modulo-2-6.html" }
       ]},
       { "n": "3", "title": "Uso real e avançado", "modules": [
         { "id": "3-1", "title": "Perguntar usando o grafo", "topics": 6, "href": "curso/trilha3/modulo-3-1.html" },
         { "id": "3-2", "title": "Claude OS command center", "topics": 6, "href": "curso/trilha3/modulo-3-2.html" },
         { "id": "3-3", "title": "Código vs documentos", "topics": 6, "href": "curso/trilha3/modulo-3-3.html" },
-        { "id": "3-4", "title": "Manutenção e troubleshooting", "topics": 6, "href": "curso/trilha3/modulo-3-4.html" }
+        { "id": "3-4", "title": "Manutençêo e troubleshooting", "topics": 6, "href": "curso/trilha3/modulo-3-4.html" }
       ]}
     ]
   }
@@ -170,7 +170,7 @@
 </div>
 </nav>
 <!-- BREADCRUMB -->
-<nav aria-label="Trilha de navegação" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<nav aria-label="Trilha de navegaçêo" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-purple-400" href="../../index.html">Início</a><span>/</span>
 <a class="hover:text-purple-400" href="index.html">Trilha 3</a><span>/</span>
@@ -184,7 +184,7 @@
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MÓDULO 3.1</span>
 <h1 class="text-3xl sm:text-4xl font-bold mb-4">💬 Perguntar ao Claude Code usando o grafo</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Com o vault montado no projeto, faça o agente responder <em>pelo mapa</em> — não varrendo arquivos no escuro. God nodes como porta de entrada, backlinks pra navegar a vizinhança, prompts prontos, MCP opcional e como conferir a resposta contra a fonte.</p>
+<p class="text-lg text-neutral-400 max-w-3xl">Com o vault montado no projeto, faça o agente responder <em>pelo mapa</em> — nêo varrendo arquivos no escuro. God nodes como porta de entrada, backlinks pra navegar a vizinhança, prompts prontos, MCP opcional e como conferir a resposta contra a fonte.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">~40</div><div class="text-xs text-neutral-400">Minutos</div></div>
@@ -201,7 +201,7 @@
 <aside class="hidden lg:block">
 <nav aria-label="Índice do módulo" class="sticky top-24" data-inema-toc="">
 <p class="text-xs uppercase tracking-wide text-neutral-500 mb-2">Neste módulo</p>
-<p class="text-sm text-neutral-400 mb-3">Seção <span data-inema-section-counter="">1 de 6</span></p>
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter="">1 de 6</span></p>
 <ol class="space-y-1 text-sm">
 <li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. Apontar o agente pro vault</a></li>
 <li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. Começar pelos god nodes</a></li>
@@ -223,14 +223,14 @@
 <button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
 <p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m3-1-t1-p1">
-              O Claude Code só usa o que <strong>enxerga</strong>. Se o seu segundo cérebro — o <strong class="text-purple-400">vault</strong> gerado pelo Graphify — está num canto do disco que ele nunca olha, é como se não existisse. O primeiro passo, sempre, é deixar o vault dentro (ou ao lado) do projeto e <strong>dizer ao agente onde ele está</strong>, logo no começo da sessão.
+              O Claude Code só usa o que <strong>enxerga</strong>. Se o seu segundo cérebro — o <strong class="text-purple-400">vault</strong> gerado pelo Graphify — está num canto do disco que ele nunca olha, é como se nêo existisse. O primeiro passo, sempre, é deixar o vault dentro (ou ao lado) do projeto e <strong>dizer ao agente onde ele está</strong>, logo no começo da sessêo.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? O que é o "vault" e a pasta de imports</h3>
-<p class="text-neutral-300 text-sm">O <strong>vault</strong> é a pasta que o export do Obsidian produziu: um <code class="font-mono text-xs bg-dark-900 px-1 rounded">.md</code> por conceito, com <strong>backlinks</strong> <code class="font-mono text-xs bg-dark-900 px-1 rounded">[[nome-do-no]]</code>, mais o <code class="font-mono text-xs bg-dark-900 px-1 rounded">GRAPH_REPORT.md</code>. A convenção do curso é guardá-lo numa pasta tipo <code class="font-mono text-xs bg-dark-900 px-1 rounded">graph-imports/&lt;nome-do-grafo&gt;/</code> dentro do projeto, pra ficar versionável e no campo de visão do agente.</p>
+<p class="text-neutral-300 text-sm">O <strong>vault</strong> é a pasta que o export do Obsidian produziu: um <code class="font-mono text-xs bg-dark-900 px-1 rounded">.md</code> por conceito, com <strong>backlinks</strong> <code class="font-mono text-xs bg-dark-900 px-1 rounded">[[nome-do-no]]</code>, mais o <code class="font-mono text-xs bg-dark-900 px-1 rounded">GRAPH_REPORT.md</code>. A convençêo do curso é guardá-lo numa pasta tipo <code class="font-mono text-xs bg-dark-900 px-1 rounded">graph-imports/&lt;nome-do-grafo&gt;/</code> dentro do projeto, pra ficar versionável e no campo de visêo do agente.</p>
 </div>
 <p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m3-1-t1-p2">
-              Não basta o vault estar no disco: o agente precisa ser <strong>direcionado</strong> a ele antes de começar a varrer o repositório. A forma mais barata é uma frase de abertura que estabelece o vault como <strong class="text-purple-400">fonte primária</strong>. O bloco abaixo é um prompt pronto pra colar.
+              Nêo basta o vault estar no disco: o agente precisa ser <strong>direcionado</strong> a ele antes de começar a varrer o repositório. A forma mais barata é uma frase de abertura que estabelece o vault como <strong class="text-purple-400">fonte primária</strong>. O bloco abaixo é um prompt pronto pra colar.
             </p>
 <div class="bg-dark-900 rounded-xl border border-dark-600 p-5 mb-4">
 <div class="flex items-center gap-2 mb-3 text-xs text-neutral-500"><span class="w-3 h-3 rounded-full bg-red-500/60"></span><span class="w-3 h-3 rounded-full bg-yellow-500/60"></span><span class="w-3 h-3 rounded-full bg-purple-500/60"></span><span class="ml-2 font-mono">prompt de abertura (ilustrativo)</span></div>
@@ -245,7 +245,7 @@ com os god nodes. Use ESSE vault como fonte primária antes de varrer o repo.</p
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-sm">
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Vault</div><div class="text-xs text-neutral-400">Pasta de .md</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">graph-imports/</div><div class="text-xs text-neutral-400">Onde guardar</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Contexto</div><div class="text-xs text-neutral-400">No campo de visão</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Contexto</div><div class="text-xs text-neutral-400">No campo de visêo</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Direcionar</div><div class="text-xs text-neutral-400">Apontar = usar</div></div>
 </div>
 </div>
@@ -266,11 +266,11 @@ com os god nodes. Use ESSE vault como fonte primária antes de varrer o repo.</p
 <button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
 <p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m3-1-t2-p1">
-              Onde começar uma pergunta? Pelos <strong class="text-purple-400">god nodes</strong> — as entidades mais conectadas do grafo, listadas no <code class="font-mono text-xs bg-dark-900 px-1 rounded">GRAPH_REPORT.md</code>. Eles são os <em>hubs</em>: entrar por um deles puxa o resto do mapa junto, porque quase tudo passa por ali. Começar por um nó periférico é entrar pela porta dos fundos.
+              Onde começar uma pergunta? Pelos <strong class="text-purple-400">god nodes</strong> — as entidades mais conectadas do grafo, listadas no <code class="font-mono text-xs bg-dark-900 px-1 rounded">GRAPH_REPORT.md</code>. Eles sêo os <em>hubs</em>: entrar por um deles puxa o resto do mapa junto, porque quase tudo passa por ali. Começar por um nó periférico é entrar pela porta dos fundos.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? O que é um "god node"</h3>
-<p class="text-neutral-300 text-sm">No grafo, cada <strong>entidade</strong> (nó) tem um número de <strong>conexões</strong>. Os <strong>god nodes</strong> são os campeões de conexão — o "Context Window", os "Hooks", o "MCP" de uma documentação, por exemplo. O Graphify já os calcula e despeja no <code class="font-mono text-xs bg-dark-900 px-1 rounded">GRAPH_REPORT.md</code>, junto de <strong>perguntas sugeridas</strong>.</p>
+<p class="text-neutral-300 text-sm">No grafo, cada <strong>entidade</strong> (nó) tem um número de <strong>conexões</strong>. Os <strong>god nodes</strong> sêo os campeões de conexêo — o "Context Window", os "Hooks", o "MCP" de uma documentaçêo, por exemplo. O Graphify já os calcula e despeja no <code class="font-mono text-xs bg-dark-900 px-1 rounded">GRAPH_REPORT.md</code>, junto de <strong>perguntas sugeridas</strong>.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-5">
@@ -315,10 +315,10 @@ com os god nodes. Use ESSE vault como fonte primária antes de varrer o repo.</p
 <button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
 <p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m3-1-t3-p1">
-              Entrou por um god node — e agora? O pulo do gato é deixar o agente <strong>seguir os backlinks</strong>: os <code class="font-mono text-xs bg-dark-900 px-1 rounded">[[links]]</code> que cada nota carrega pros conceitos vizinhos. Em vez de parar no primeiro nó, ele anda pela <strong class="text-purple-400">vizinhança</strong> e monta uma resposta <em>conectada</em>, não isolada.
+              Entrou por um god node — e agora? O pulo do gato é deixar o agente <strong>seguir os backlinks</strong>: os <code class="font-mono text-xs bg-dark-900 px-1 rounded">[[links]]</code> que cada nota carrega pros conceitos vizinhos. Em vez de parar no primeiro nó, ele anda pela <strong class="text-purple-400">vizinhança</strong> e monta uma resposta <em>conectada</em>, nêo isolada.
             </p>
 <p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m3-1-t3-p2">
-              É exatamente o que o vault foi feito pra permitir: cada <code class="font-mono text-xs bg-dark-900 px-1 rounded">.md</code> aponta pros vizinhos, então o agente navega o <strong>sentido</strong> — não posições de texto soltas. Visualmente, o caminho é este:
+              É exatamente o que o vault foi feito pra permitir: cada <code class="font-mono text-xs bg-dark-900 px-1 rounded">.md</code> aponta pros vizinhos, entêo o agente navega o <strong>sentido</strong> — nêo posições de texto soltas. Visualmente, o caminho é este:
             </p>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="O Claude Code entra por um god node em destaque e segue os backlinks até os conceitos vizinhos, trazendo a resposta conectada de volta" class="w-full h-auto" role="img" viewbox="0 0 1000 260">
@@ -362,13 +362,13 @@ com os god nodes. Use ESSE vault como fonte primária antes de varrer o repo.</p
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="228" y="196">resposta conectada</text>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6">↑ A pergunta entra pelo <strong class="text-purple-400">god node</strong> em destaque; daí o agente segue os <strong>backlinks</strong> até os vizinhos (ciano) e devolve uma resposta que liga os conceitos — não um parágrafo solto.</p>
+<p class="text-sm text-neutral-400 mb-6">↑ A pergunta entra pelo <strong class="text-purple-400">god node</strong> em destaque; daí o agente segue os <strong>backlinks</strong> até os vizinhos (ciano) e devolve uma resposta que liga os conceitos — nêo um parágrafo solto.</p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
 <h4 class="font-semibold text-purple-400 mb-3">🔑 Conceitos-chave</h4>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-sm">
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Backlink</div><div class="text-xs text-neutral-400">[[link]] pro vizinho</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Vizinhança</div><div class="text-xs text-neutral-400">Nós ao redor</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Navegação</div><div class="text-xs text-neutral-400">Andar pelo mapa</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Navegaçêo</div><div class="text-xs text-neutral-400">Andar pelo mapa</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Conectada</div><div class="text-xs text-neutral-400">≠ resposta isolada</div></div>
 </div>
 </div>
@@ -395,8 +395,8 @@ com os god nodes. Use ESSE vault como fonte primária antes de varrer o repo.</p
 <p class="text-xs text-purple-400 font-semibold mb-2">🎯 Objetivo: responder pelo mapa e citar a procedência, sem varrer o repo.</p>
 <pre class="font-mono text-xs sm:text-sm text-neutral-300 overflow-x-auto leading-relaxed">Use o vault em graph-imports/&lt;nome-do-grafo&gt;/ para explicar &lt;tema&gt;.
 Comece pelo god node mais ligado a ele, siga os backlinks [[...]] até os
-conceitos vizinhos e cite cada nota .md que usar. Não varra o resto do repo.</pre>
-<p class="text-xs text-neutral-400 mt-3"><span class="text-purple-400 font-semibold">✔ Como verificar:</span> a resposta deve <strong>citar nomes de notas</strong> do vault (ex.: <code class="font-mono bg-dark-900 px-1 rounded">Context-Window.md</code>) e os conceitos vizinhos — não um parágrafo genérico sem fonte. Sem citações = ele não usou o mapa.</p>
+conceitos vizinhos e cite cada nota .md que usar. Nêo varra o resto do repo.</pre>
+<p class="text-xs text-neutral-400 mt-3"><span class="text-purple-400 font-semibold">✔ Como verificar:</span> a resposta deve <strong>citar nomes de notas</strong> do vault (ex.: <code class="font-mono bg-dark-900 px-1 rounded">Context-Window.md</code>) e os conceitos vizinhos — nêo um parágrafo genérico sem fonte. Sem citações = ele nêo usou o mapa.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-5">
@@ -419,7 +419,7 @@ conceitos vizinhos e cite cada nota .md que usar. Não varra o resto do repo.</p
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
 <h4 class="font-semibold text-purple-400 mb-3">🔑 Conceitos-chave</h4>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-sm">
-<div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Prompt</div><div class="text-xs text-neutral-400">Instrução pronta</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Prompt</div><div class="text-xs text-neutral-400">Instruçêo pronta</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Escopo</div><div class="text-xs text-neutral-400">Ficar no vault</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Citar notas</div><div class="text-xs text-neutral-400">Procedência</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">&lt;tema&gt;</div><div class="text-xs text-neutral-400">Você troca</div></div>
@@ -445,11 +445,11 @@ conceitos vizinhos e cite cada nota .md que usar. Não varra o resto do repo.</p
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? O que é "MCP"</h3>
-<p class="text-neutral-300 text-sm"><strong>MCP</strong> (Model Context Protocol) é o padrão que deixa o Claude Code chamar <strong>tools</strong> e ler <strong>resources</strong> de um servidor externo. Aqui, o servidor é o próprio grafo: ele expõe funções como <code class="font-mono text-xs bg-dark-900 px-1 rounded">query_graph</code> que o agente chama na hora de responder.</p>
+<p class="text-neutral-300 text-sm"><strong>MCP</strong> (Model Context Protocol) é o padrêo que deixa o Claude Code chamar <strong>tools</strong> e ler <strong>resources</strong> de um servidor externo. Aqui, o servidor é o próprio grafo: ele expõe funções como <code class="font-mono text-xs bg-dark-900 px-1 rounded">query_graph</code> que o agente chama na hora de responder.</p>
 </div>
 <div class="bg-dark-900 rounded-xl border border-dark-600 p-5 mb-4">
 <div class="flex items-center gap-2 mb-3 text-xs text-neutral-500"><span class="w-3 h-3 rounded-full bg-red-500/60"></span><span class="w-3 h-3 rounded-full bg-yellow-500/60"></span><span class="w-3 h-3 rounded-full bg-purple-500/60"></span><span class="ml-2 font-mono">subir o servidor MCP (ilustrativo)</span></div>
-<p class="text-xs text-purple-400 font-semibold mb-2">🎯 Objetivo: servir o grafo como tools, não só como arquivos.</p>
+<p class="text-xs text-purple-400 font-semibold mb-2">🎯 Objetivo: servir o grafo como tools, nêo só como arquivos.</p>
 <pre class="font-mono text-xs sm:text-sm text-neutral-300 overflow-x-auto leading-relaxed"># dentro do Claude Code (skill form):
 /graphify . --mcp
 
@@ -457,7 +457,7 @@ conceitos vizinhos e cite cada nota .md que usar. Não varra o resto do repo.</p
 graphify --mcp
 
 # tools expostas: query_graph · get_node · get_neighbors · shortest_path</pre>
-<p class="text-xs text-neutral-400 mt-3"><span class="text-purple-400 font-semibold">✔ Como verificar:</span> peça <em>"use query_graph para listar os vizinhos de &lt;conceito&gt;"</em>. Se ele <strong>chamar a tool</strong> e devolver os nós ligados, o MCP está no ar. Se responder por texto sem invocar tool, o servidor não subiu.</p>
+<p class="text-xs text-neutral-400 mt-3"><span class="text-purple-400 font-semibold">✔ Como verificar:</span> peça <em>"use query_graph para listar os vizinhos de &lt;conceito&gt;"</em>. Se ele <strong>chamar a tool</strong> e devolver os nós ligados, o MCP está no ar. Se responder por texto sem invocar tool, o servidor nêo subiu.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
 <h4 class="font-semibold text-purple-400 mb-3">🔑 Conceitos-chave</h4>
@@ -484,10 +484,10 @@ graphify --mcp
 <button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
 <p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m3-1-t6-p1">
-              Confiar, mas conferir. O grafo guarda a <strong class="text-purple-400">procedência</strong> de cada nó — o arquivo-fonte de onde a entidade saiu — dentro do <code class="font-mono text-xs bg-dark-900 px-1 rounded">graph.json</code>. Quando o agente afirma algo, você fecha o ciclo indo do conceito até o <strong>doc-fonte</strong> original e checando se bate. É a melhor defesa contra alucinação.
+              Confiar, mas conferir. O grafo guarda a <strong class="text-purple-400">procedência</strong> de cada nó — o arquivo-fonte de onde a entidade saiu — dentro do <code class="font-mono text-xs bg-dark-900 px-1 rounded">graph.json</code>. Quando o agente afirma algo, você fecha o ciclo indo do conceito até o <strong>doc-fonte</strong> original e checando se bate. É a melhor defesa contra alucinaçêo.
             </p>
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="De um conceito da resposta você segue a procedência registrada no graph.json até o documento-fonte original e confere se a afirmação bate" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="De um conceito da resposta você segue a procedência registrada no graph.json até o documento-fonte original e confere se a afirmaçêo bate" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m31b-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#c084fc"></stop><stop offset="1" stop-color="#a855f7"></stop></lineargradient>
 <filter height="180%" id="m31b-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -516,11 +516,11 @@ graphify --mcp
 <text fill="#c084fc" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="490" y="172">confere se bate ✓</text>
 </svg>
 </div>
-<p class="text-sm text-neutral-400 mb-6">↑ O conceito afirmado leva, pela <strong class="text-purple-400">procedência</strong> do <code class="font-mono text-xs bg-dark-900 px-1 rounded">graph.json</code>, até o doc-fonte original — onde você confere. Os docs-fonte não vão pro vault: ficam no projeto.</p>
+<p class="text-sm text-neutral-400 mb-6">↑ O conceito afirmado leva, pela <strong class="text-purple-400">procedência</strong> do <code class="font-mono text-xs bg-dark-900 px-1 rounded">graph.json</code>, até o doc-fonte original — onde você confere. Os docs-fonte nêo vêo pro vault: ficam no projeto.</p>
 <div class="space-y-5 mb-6">
 <div class="flex items-start gap-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold">1</div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Pegue o conceito afirmado</h4><p class="text-sm text-neutral-300">Anote a afirmação central da resposta e o nó (nota) que a sustenta.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Pegue o conceito afirmado</h4><p class="text-sm text-neutral-300">Anote a afirmaçêo central da resposta e o nó (nota) que a sustenta.</p></div>
 </div>
 <div class="flex items-start gap-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold">2</div>
@@ -528,7 +528,7 @@ graphify --mcp
 </div>
 <div class="flex items-start gap-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold">3</div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Abra o doc-fonte e confira</h4><p class="text-sm text-neutral-300">Se bate, confiança total. Se não bate, é alucinação — corrija a nota ou regenere o grafo.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold mb-1">Abra o doc-fonte e confira</h4><p class="text-sm text-neutral-300">Se bate, confiança total. Se nêo bate, é alucinaçêo — corrija a nota ou regenere o grafo.</p></div>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6">
@@ -537,7 +537,7 @@ graphify --mcp
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Procedência</div><div class="text-xs text-neutral-400">De onde veio</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">graph.json</div><div class="text-xs text-neutral-400">Fonte de verdade</div></div>
 <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Doc-fonte</div><div class="text-xs text-neutral-400">A evidência</div></div>
-<div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Checagem</div><div class="text-xs text-neutral-400">≠ alucinação</div></div>
+<div class="bg-dark-700/50 rounded-lg p-3"><div class="text-purple-400 font-bold">Checagem</div><div class="text-xs text-neutral-400">≠ alucinaçêo</div></div>
 </div>
 </div>
 <div class="flex justify-start mt-6">
@@ -548,10 +548,10 @@ graphify --mcp
 </section>
 <!-- CHECAGEM LEVE -->
 <div class="inema-check mb-12 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-3-1#q1">
-<p class="font-medium mb-4">✋ Auto-recuperação (opcional, não bloqueia): por que começar uma pergunta pelos <strong class="text-purple-400">god nodes</strong> costuma render mais?</p>
+<p class="font-medium mb-4">✋ Auto-recuperaçêo (opcional, nêo bloqueia): por que começar uma pergunta pelos <strong class="text-purple-400">god nodes</strong> costuma render mais?</p>
 <div class="inema-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">Porque eles são os arquivos maiores do vault.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Porque são os nós mais conectados — entrar por eles puxa a vizinhança certa junto.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">Porque eles sêo os arquivos maiores do vault.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">Porque sêo os nós mais conectados — entrar por eles puxa a vizinhança certa junto.</button>
 <button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Porque só os god nodes têm backlinks.</button>
 </div>
 <div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
@@ -563,7 +563,7 @@ graphify --mcp
 <div class="space-y-3 mb-8">
 <div class="flex items-start gap-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Apontar é usar:</strong> <span class="text-neutral-400">deixe o vault em <code class="font-mono text-xs bg-dark-900 px-1 rounded">graph-imports/</code> e diga ao agente onde ele está.</span></div></div>
 <div class="flex items-start gap-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Comece pelos god nodes:</strong> <span class="text-neutral-400">os hubs do <code class="font-mono text-xs bg-dark-900 px-1 rounded">GRAPH_REPORT.md</code> cobrem mais terreno.</span></div></div>
-<div class="flex items-start gap-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Deixe seguir backlinks:</strong> <span class="text-neutral-400">resposta conectada, não isolada.</span></div></div>
+<div class="flex items-start gap-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Deixe seguir backlinks:</strong> <span class="text-neutral-400">resposta conectada, nêo isolada.</span></div></div>
 <div class="flex items-start gap-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Prompt que cita notas:</strong> <span class="text-neutral-400">direciona ao grafo e dá procedência.</span></div></div>
 <div class="flex items-start gap-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">MCP é opcional:</strong> <span class="text-neutral-400"><code class="font-mono text-xs bg-dark-900 px-1 rounded">graphify --mcp</code> serve o grafo como tools.</span></div></div>
 <div class="flex items-start gap-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Valide contra a fonte:</strong> <span class="text-neutral-400">a procedência no <code class="font-mono text-xs bg-dark-900 px-1 rounded">graph.json</code> leva de volta à evidência.</span></div></div>
@@ -599,7 +599,7 @@ graphify --mcp
 <script>
     if (window.INEMA && typeof window.INEMA.init === 'function') {
       window.INEMA.init();
-      if (INEMA.registerCheck) INEMA.registerCheck('modulo-3-1#q1', { answer: 1, explain: { 0: 'Tamanho do arquivo não importa aqui — o que conta é quantas conexões o nó tem.', 1: 'Isso. God node = nó mais conectado; entrar por ele puxa a vizinhança certa e cobre mais terreno.', 2: 'Não — qualquer nota do vault tem backlinks; os god nodes só têm mais conexões que as outras.' } });
+      if (INEMA.registerCheck) INEMA.registerCheck('modulo-3-1#q1', { answer: 1, explain: { 0: 'Tamanho do arquivo nêo importa aqui — o que conta é quantas conexões o nó tem.', 1: 'Isso. God node = nó mais conectado; entrar por ele puxa a vizinhança certa e cobre mais terreno.', 2: 'Nêo — qualquer nota do vault tem backlinks; os god nodes só têm mais conexões que as outras.' } });
     }
   </script>
 </body>

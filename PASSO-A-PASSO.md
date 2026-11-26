@@ -1,8 +1,8 @@
 # Passo a passo prático — Segundo Cérebro pro Claude Code (Graphify + Obsidian)
 
-Guia de mão na massa para **implementar e usar** o stack do vídeo *"Graphify + Obsidian + Claude Code = CHEAT CODE"*. Tudo aqui é **copy-run**: você cola, roda e confere. Acompanha o curso (Trilha 2), mas funciona sozinho.
+Guia de mêo na massa para **implementar e usar** o stack do vídeo *"Graphify + Obsidian + Claude Code = CHEAT CODE"*. Tudo aqui é **copy-run**: você cola, roda e confere. Acompanha o curso (Trilha 2), mas funciona sozinho.
 
-> **Honestidade técnica.** No vídeo o autor chama a ferramenta de "Graphify/Graphifi" e mostra um flag `graphify --obsidian`. A ferramenta real é o pacote **`graphifyy`** (CLI Python, dois "y", de Safi Shamsi — também existe uma versão TypeScript `@sentropic/graphify`). As duas instalam a skill `/graphify` no Claude Code. Onde houver dúvida de versão, rode `graphify --help` e veja o README do repositório. Os números do vídeo (145 docs → 591 nós, 685 conexões, 67 comunidades) são de **uma execução específica** do autor, não constantes da ferramenta.
+> **Honestidade técnica.** No vídeo o autor chama a ferramenta de "Graphify/Graphifi" e mostra um flag `graphify --obsidian`. A ferramenta real é o pacote **`graphifyy`** (CLI Python, dois "y", de Safi Shamsi — também existe uma versêo TypeScript `@sentropic/graphify`). As duas instalam a skill `/graphify` no Claude Code. Onde houver dúvida de versêo, rode `graphify --help` e veja o README do repositório. Os números do vídeo (145 docs → 591 nós, 685 conexões, 67 comunidades) sêo de **uma execuçêo específica** do autor, nêo constantes da ferramenta.
 
 ---
 
@@ -15,7 +15,7 @@ Guia de mão na massa para **implementar e usar** o stack do vídeo *"Graphify +
 | **Claude Code** | já instalado e funcionando no terminal |
 | **Obsidian** | baixe grátis em https://obsidian.md (desktop) |
 
-> **Node.js não é necessário** (o Graphify é Python). **API key:** rodando via `/graphify` **dentro do Claude Code você NÃO precisa de chave** — a sessão fornece o modelo. Só o uso *headless* (terminal puro sobre documentos) pede `ANTHROPIC_API_KEY`. Para código puro, a extração é via AST (tree-sitter) e **não usa chave**.
+> **Node.js nêo é necessário** (o Graphify é Python). **API key:** rodando via `/graphify` **dentro do Claude Code você NêO precisa de chave** — a sessêo fornece o modelo. Só o uso *headless* (terminal puro sobre documentos) pede `ANTHROPIC_API_KEY`. Para código puro, a extraçêo é via AST (tree-sitter) e **nêo usa chave**.
 
 ---
 
@@ -28,12 +28,12 @@ Guia de mão na massa para **implementar e usar** o stack do vídeo *"Graphify +
 uv tool install graphifyy
 #    alternativas:  pipx install graphifyy   |   pip install graphifyy
 
-# se "graphify" não for encontrado depois:
+# se "graphify" nêo for encontrado depois:
 uv tool update-shell      # e reabra o terminal
 
 # 2) registrar a skill no Claude Code (escreve ~/.claude/skills/graphify/SKILL.md)
 graphify install
-#    versão por-projeto (fica commitável no repo):
+#    versêo por-projeto (fica commitável no repo):
 #    graphify install --project
 ```
 
@@ -50,21 +50,21 @@ ls ~/.claude/skills/graphify/SKILL.md   # deve existir
 **Objetivo:** ter o app pronto para receber o vault.
 
 1. Baixe e instale o Obsidian de https://obsidian.md.
-2. Abra. Não precisa criar nada ainda — vamos **apontar** o Obsidian para a pasta gerada no Passo 6.
+2. Abra. Nêo precisa criar nada ainda — vamos **apontar** o Obsidian para a pasta gerada no Passo 6.
 
 ---
 
 ## 3. Escolher e preparar a fonte (10 min)
 
-**Objetivo:** ter uma pasta com o conteúdo que vira grafo. Pode ser **código** (repositório) ou **documentos** (PDF, markdown, etc.). No exemplo do vídeo, são os documentos oficiais do Claude Code.
+**Objetivo:** ter uma pasta com o conteúdo que vira grafo. Pode ser **código** (repositório) ou **documentos** (PDF, markdown, etc.). No exemplo do vídeo, sêo os documentos oficiais do Claude Code.
 
-**Opção A — peça ao Claude Code para baixar (prompt copy-run):**
+**Opçêo A — peça ao Claude Code para baixar (prompt copy-run):**
 ```text
-Baixe a documentação oficial do Claude Code para uma pasta local chamada
+Baixe a documentaçêo oficial do Claude Code para uma pasta local chamada
 ./claude-code-docs (um arquivo por página, em markdown). Liste quantos arquivos baixou.
 ```
 
-**Opção B — já tenho os arquivos:** junte tudo numa pasta dedicada e limpa, ex.:
+**Opçêo B — já tenho os arquivos:** junte tudo numa pasta dedicada e limpa, ex.:
 ```bash
 mkdir -p ~/projetos/segundo-cerebro/claude-code-docs
 # copie seus .md/.pdf para dentro
@@ -98,8 +98,8 @@ graphify extract ./claude-code-docs
 
 | Arquivo | O que é | O que fazer |
 |---|---|---|
-| `graph.json` | O grafo completo (fonte de verdade) | não edite à mão |
-| `graph.html` | Visualização interativa | **abra no navegador** |
+| `graph.json` | O grafo completo (fonte de verdade) | nêo edite à mêo |
+| `graph.html` | Visualizaçêo interativa | **abra no navegador** |
 | `GRAPH_REPORT.md` | Auditoria: **god nodes** + **perguntas sugeridas** | **leia primeiro** |
 | `cache/` | Cache por arquivo | ignore (acelera re-rodadas) |
 
@@ -124,7 +124,7 @@ graphify update ./claude-code-docs   # só reprocessa o que mudou
 
 **Objetivo:** transformar o grafo num vault de markdown — **um arquivo por nó**, com `[[wikilinks]]`, mais um `graph.canvas` com as comunidades agrupadas.
 
-> O flag `--obsidian` **só existe na skill** (dentro do Claude Code), não no `graphify extract` headless.
+> O flag `--obsidian` **só existe na skill** (dentro do Claude Code), nêo no `graphify extract` headless.
 
 **Dentro do Claude Code:**
 ```text
@@ -143,7 +143,7 @@ ls ~/vault/graphify/claude-code | head        # vários .md (um por nó)
 ls ~/vault/graphify/claude-code/*.canvas      # o graph.canvas
 ```
 
-> **Importante:** o export é **regenerado do zero** a cada execução. Não edite as notas geradas esperando que sobrevivam — suas anotações próprias ficam em pastas separadas (ver Passo 8).
+> **Importante:** o export é **regenerado do zero** a cada execuçêo. Nêo edite as notas geradas esperando que sobrevivam — suas anotações próprias ficam em pastas separadas (ver Passo 8).
 
 ---
 
@@ -152,7 +152,7 @@ ls ~/vault/graphify/claude-code/*.canvas      # o graph.canvas
 **Objetivo:** navegar o vault e ligar cada conceito ao documento de origem.
 
 1. **Apontar o Obsidian para a pasta:** no Obsidian, canto inferior esquerdo → **Manage vaults** → **Open folder as vault** → escolha `~/vault/graphify/claude-code`.
-2. **Navegar:** abra uma nota-nó e siga os `[[backlinks]]` para os conceitos ligados. Esse é o segundo cérebro em ação.
+2. **Navegar:** abra uma nota-nó e siga os `[[backlinks]]` para os conceitos ligados. Esse é o segundo cérebro em açêo.
 3. **Ver as comunidades:** abra o arquivo `graph.canvas` — as comunidades aparecem como grupos nomeados.
 4. **Ligar às fontes (prompt copy-run no Claude Code):**
 ```text
@@ -161,20 +161,20 @@ ligue cada nó à sua origem (um link "documento-fonte" em cada nota), para eu p
 ir do conceito direto ao texto completo.
 ```
 
-> A **graph view** do Obsidian é só um desenho dos links entre as notas markdown — é um **espelho**, não o grafo original do Graphify. Sabendo disso, a expectativa fica certa.
+> A **graph view** do Obsidian é só um desenho dos links entre as notas markdown — é um **espelho**, nêo o grafo original do Graphify. Sabendo disso, a expectativa fica certa.
 
 ---
 
-## 7. As 4 estratégias de integração (decida quanto entra no seu cérebro principal)
+## 7. As 4 estratégias de integraçêo (decida quanto entra no seu cérebro principal)
 
-O export pode jogar **centenas** de arquivos no seu vault. Escolha o nível de integração:
+O export pode jogar **centenas** de arquivos no seu vault. Escolha o nível de integraçêo:
 
 | # | Estratégia | O que é | Quando usar |
 |---|---|---|---|
 | 1 | **Vault standalone** | Mantém o vault gerado isolado, como um vault próprio | Você só quer o conhecimento dentro do ecossistema Obsidian |
 | 2 | **Subpasta-quarentena** | Tudo numa subpasta do vault principal (ex.: `graph-imports/claude-code-docs`) que dá pra **apagar inteira** | Trazer pro contexto com saída fácil — **recomendado para começar** |
-| 3 | **Importação seletiva (harvest)** | Trazer só as notas relevantes (ex.: as ~100 sobre subagents) e ignorar o resto | Você não quer despejar 600 arquivos |
-| 4 | **Redistribuição** | O Claude Code espalha cada nota na subpasta que faz mais sentido | Máxima coerência — mas **mais difícil de desfazer** |
+| 3 | **Importaçêo seletiva (harvest)** | Trazer só as notas relevantes (ex.: as ~100 sobre subagents) e ignorar o resto | Você nêo quer despejar 600 arquivos |
+| 4 | **Redistribuiçêo** | O Claude Code espalha cada nota na subpasta que faz mais sentido | Máxima coerência — mas **mais difícil de desfazer** |
 
 **Mover pro vault principal (prompt copy-run, estratégia 2):**
 ```text
@@ -183,19 +183,19 @@ principal em <caminho-do-seu-vault>, numa subpasta própria chamada
 graph-imports/claude-code-docs, sem misturar com o resto.
 ```
 
-**Importação seletiva (prompt copy-run, estratégia 3):**
+**Importaçêo seletiva (prompt copy-run, estratégia 3):**
 ```text
 Olhe o vault gerado em ~/vault/graphify/claude-code e traga para
 graph-imports/claude-code-docs apenas as notas relacionadas a <tema, ex.: subagents>.
 Ignore o resto. Liste o que trouxe.
 ```
 
-**Árvore de decisão rápida:**
+**Árvore de decisêo rápida:**
 - É um **code base** para explorar pontualmente? → **pare no Graphify** (graph.html + `graphify query`).
 - Quer no Obsidian, mas **isolado**? → **standalone**.
 - Quer integrar **com segurança**? → **quarentena** (apaga numa pasta só).
 - Quer **curar**? → **harvest**.
-- Quer **coerência total** e topa o risco? → **redistribuição**.
+- Quer **coerência total** e topa o risco? → **redistribuiçêo**.
 
 ---
 
@@ -216,21 +216,21 @@ Assim o agente consulta o grafo programaticamente (resources `graphify://report`
 
 **Manter o vault vivo:**
 - Fonte mudou? `graphify update ./claude-code-docs` e re-exporte o `--obsidian`.
-- Mantenha **suas** anotações separadas das notas geradas (que são regeneradas do zero).
+- Mantenha **suas** anotações separadas das notas geradas (que sêo regeneradas do zero).
 - Versione: `git add graphify-out/` (ou o vault) para reproduzir e fazer backup.
 
 ---
 
-## 9. Solução de problemas
+## 9. Soluçêo de problemas
 
 | Sintoma | Causa provável | Fix |
 |---|---|---|
 | `graphify: command not found` | binário fora do PATH | `uv tool update-shell` e reabra o terminal |
-| Erro de **API key** no terminal | uso headless sobre docs | `export ANTHROPIC_API_KEY=<sua-chave>` — **não** é preciso dentro do `/graphify` |
-| `--obsidian` "não existe" | você usou o `graphify extract` headless | use o flag **na skill**: `/graphify ./docs --obsidian ...` |
+| Erro de **API key** no terminal | uso headless sobre docs | `export ANTHROPIC_API_KEY=<sua-chave>` — **nêo** é preciso dentro do `/graphify` |
+| `--obsidian` "nêo existe" | você usou o `graphify extract` headless | use o flag **na skill**: `/graphify ./docs --obsidian ...` |
 | Grafo raso ou barulhento | corpus sujo / superficial | limpe a fonte, ou use `/graphify ./docs --mode deep` |
 | Minhas edições sumiram do vault | export é **regenerado** | mantenha suas notas em pasta separada das geradas |
-| `graphify` não acha Python | Python < 3.10 | instale 3.10+ e reinstale com `uv tool install graphifyy` |
+| `graphify` nêo acha Python | Python < 3.10 | instale 3.10+ e reinstale com `uv tool install graphifyy` |
 
 ---
 
@@ -244,7 +244,7 @@ Assim o agente consulta o grafo programaticamente (resources `graphify://report`
 - [ ] Vault gerado com `--obsidian` (vários `.md` + `graph.canvas`)
 - [ ] Vault aberto no Obsidian (Open folder as vault)
 - [ ] Fontes ligadas aos nós
-- [ ] Estratégia de integração escolhida (recomendado: quarentena)
+- [ ] Estratégia de integraçêo escolhida (recomendado: quarentena)
 - [ ] Fiz o Claude Code responder usando o vault
 
 ---
