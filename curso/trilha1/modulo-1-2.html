@@ -4,28 +4,28 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="segundo-cerebro" name="inema-course"/>
+<meta content="segundo-cerebro" name="ARCKHÉ-course"/>
 <title>Módulo 1.2 · Grafo de conhecimento | Segundo Cérebro pro Claude Code</title>
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
-      var THEMES = { 'inema-dark':{dark:true,attr:null,cs:'dark'}, 'claro':{dark:false,attr:null,cs:'light'}, 'sepia':{dark:false,attr:'sepia',cs:'light'}, 'foco':{dark:null,attr:'foco',cs:null}, 'contraste':{dark:true,attr:'contraste',cs:'dark'} };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var THEMES = { 'ARCKHÉ-dark':{dark:true,attr:null,cs:'dark'}, 'claro':{dark:false,attr:null,cs:'light'}, 'sepia':{dark:false,attr:'sepia',cs:'light'}, 'foco':{dark:null,attr:'foco',cs:null}, 'contraste':{dark:true,attr:'contraste',cs:'dark'} };
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter'); html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale/100).toString()); s.setProperty('font-size', scale + '%');
+      s.setProperty('--ARCKHÉ-font-scale', (scale/100).toString()); s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch'); s.setProperty('--lh-body', (+p.leading || 1.7).toString());
       var fam = p.font === 'system' ? 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif' : (p.font === 'leitura' ? '"Atkinson Hyperlegible", "Inter", system-ui, sans-serif' : '"Inter", system-ui, sans-serif');
       s.setProperty('--font-body', fam);
@@ -42,7 +42,7 @@
   </script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "segundo-cerebro",
     "tracks": [
@@ -114,12 +114,12 @@
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
     /* Marcar-lido: estado por ícone + texto (garante alternância mesmo sem learn.css) */
-    [data-inema-read-toggle] .inema-ico-done, [data-inema-read-toggle] .inema-label-done { display:none; }
-    [data-inema-read-toggle][aria-pressed="true"] .inema-ico-todo, [data-inema-read-toggle][aria-pressed="true"] .inema-label-todo { display:none; }
-    [data-inema-read-toggle][aria-pressed="true"] .inema-ico-done, [data-inema-read-toggle][aria-pressed="true"] .inema-label-done { display:inline; }
-    [data-inema-read-toggle][aria-pressed="true"] { opacity:.92; }
-    .inema-toc-link.is-active { color:#34d399; font-weight:600; }
-    html:not(.dark) .inema-toc-link.is-active { color:#059669; }
+    [data-ARCKHÉ-read-toggle] .ARCKHÉ-ico-done, [data-ARCKHÉ-read-toggle] .ARCKHÉ-label-done { display:none; }
+    [data-ARCKHÉ-read-toggle][aria-pressed="true"] .ARCKHÉ-ico-todo, [data-ARCKHÉ-read-toggle][aria-pressed="true"] .ARCKHÉ-label-todo { display:none; }
+    [data-ARCKHÉ-read-toggle][aria-pressed="true"] .ARCKHÉ-ico-done, [data-ARCKHÉ-read-toggle][aria-pressed="true"] .ARCKHÉ-label-done { display:inline; }
+    [data-ARCKHÉ-read-toggle][aria-pressed="true"] { opacity:.92; }
+    .ARCKHÉ-toc-link.is-active { color:#34d399; font-weight:600; }
+    html:not(.dark) .ARCKHÉ-toc-link.is-active { color:#059669; }
 
     @keyframes wf-pulse { 0%,100% { opacity:.5 } 50% { opacity:1 } }
     @media (prefers-reduced-motion: no-preference) {
@@ -127,8 +127,8 @@
       .wf-a:nth-child(2){animation-delay:.3s} .wf-a:nth-child(3){animation-delay:.6s} .wf-a:nth-child(4){animation-delay:.9s}
     }
   </style>
-<link href="https://inematds.github.io/segundo-cerebro/curso/trilha1/modulo-1-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/segundo-cerebro/en/curso/trilha1/modulo-1-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/segundo-cerebro/es/curso/trilha1/modulo-1-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha1/modulo-1-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha1/modulo-1-2.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha1/modulo-1-2.html" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../../en/curso/trilha1/modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../../es/curso/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <!-- NAV (T1 ativa) -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -137,28 +137,28 @@
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../../index.html"><span class="text-2xl">🧠</span><span class="font-bold text-lg hidden sm:inline">Segundo Cérebro</span></a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Passo a passo</span></a>
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Uso avançado</span></a>
-<button class="hidden md:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button"><span aria-hidden="true">◷</span><span>Minha jornada</span><span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span></button>
+<button class="hidden md:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button"><span aria-hidden="true">◷</span><span>Minha jornada</span><span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span></button>
 <div class="relative">
-<button aria-expanded="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" type="button"><span aria-hidden="true">◑</span><span class="hidden sm:inline">Aparência</span></button>
-<div class="inema-appearance-pop" data-inema-appearance="">
+<button aria-expanded="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" type="button"><span aria-hidden="true">◑</span><span class="hidden sm:inline">Aparência</span></button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="">
 <p class="text-xs text-neutral-400 mb-1">Tema</p>
-<div class="inema-segment"><button data-inema-set-theme="inema-dark">Escuro</button><button data-inema-set-theme="claro">Claro</button><button data-inema-set-theme="sepia">Sépia</button><button data-inema-set-theme="foco">Foco</button><button data-inema-set-theme="contraste">Alto contraste</button></div>
+<div class="ARCKHÉ-segment"><button data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button><button data-ARCKHÉ-set-theme="claro">Claro</button><button data-ARCKHÉ-set-theme="sepia">Sépia</button><button data-ARCKHÉ-set-theme="foco">Foco</button><button data-ARCKHÉ-set-theme="contraste">Alto contraste</button></div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">Fonte</p>
-<div class="inema-segment"><button data-inema-set-font="inter">Inter</button><button data-inema-set-font="system">Sistema</button><button data-inema-set-font="leitura">Leitura</button></div>
+<div class="ARCKHÉ-segment"><button data-ARCKHÉ-set-font="inter">Inter</button><button data-ARCKHÉ-set-font="system">Sistema</button><button data-ARCKHÉ-set-font="leitura">Leitura</button></div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">Tamanho</p>
-<div class="inema-segment"><button data-inema-set-fontscale="100">A</button><button data-inema-set-fontscale="112">A+</button><button data-inema-set-fontscale="125">A++</button></div>
+<div class="ARCKHÉ-segment"><button data-ARCKHÉ-set-fontscale="100">A</button><button data-ARCKHÉ-set-fontscale="112">A+</button><button data-ARCKHÉ-set-fontscale="125">A++</button></div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">Largura</p>
-<div class="inema-segment"><button data-inema-set-linewidth="60">Estreito</button><button data-inema-set-linewidth="68">Médio</button><button data-inema-set-linewidth="75">Largo</button></div>
+<div class="ARCKHÉ-segment"><button data-ARCKHÉ-set-linewidth="60">Estreito</button><button data-ARCKHÉ-set-linewidth="68">Médio</button><button data-ARCKHÉ-set-linewidth="75">Largo</button></div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">Entrelinha</p>
-<div class="inema-segment"><button data-inema-set-leading="1.45">Compacto</button><button data-inema-set-leading="1.7">Confortável</button></div>
+<div class="ARCKHÉ-segment"><button data-ARCKHÉ-set-leading="1.45">Compacto</button><button data-ARCKHÉ-set-leading="1.7">Confortável</button></div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">Acento</p>
-<div class="inema-accent-grid"><button data-inema-set-accent="emerald" title="Emerald"></button><button data-inema-set-accent="blue" title="Blue"></button><button data-inema-set-accent="purple" title="Purple"></button><button data-inema-set-accent="amber" title="Amber"></button><button data-inema-set-accent="teal" title="Teal"></button><button data-inema-set-accent="rose" title="Rose"></button></div>
+<div class="ARCKHÉ-accent-grid"><button data-ARCKHÉ-set-accent="emerald" title="Emerald"></button><button data-ARCKHÉ-set-accent="blue" title="Blue"></button><button data-ARCKHÉ-set-accent="purple" title="Purple"></button><button data-ARCKHÉ-set-accent="amber" title="Amber"></button><button data-ARCKHÉ-set-accent="teal" title="Teal"></button><button data-ARCKHÉ-set-accent="rose" title="Rose"></button></div>
 </div>
 </div>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle" title="Alternar tema claro/escuro">
@@ -178,7 +178,7 @@
 </div>
 </nav>
 <main id="conteudo">
-<article data-inema-module="1-2" data-inema-track="1" id="modulo-1-2">
+<article data-ARCKHÉ-module="1-2" data-ARCKHÉ-track="1" id="modulo-1-2">
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -190,8 +190,8 @@
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~45</div><div class="text-xs text-neutral-400">Minutos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Básico</div><div class="text-xs text-neutral-400">Nível</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600 flex items-center gap-2">
-<div aria-label="Progresso do módulo 1.2" class="inema-ring inema-ring--sm" data-inema-meter="modulo:1-2"><span class="inema-ring__value" data-inema-meter-pct="">0%</span><svg viewbox="0 0 36 36"><circle class="inema-ring__track" cx="18" cy="18" r="16"></circle><circle class="inema-ring__bar" cx="18" cy="18" data-inema-ring="" r="16"></circle></svg></div>
-<div class="text-xs text-neutral-400" data-inema-meter-frac="">0 de 6</div>
+<div aria-label="Progresso do módulo 1.2" class="ARCKHÉ-ring ARCKHÉ-ring--sm" data-ARCKHÉ-meter="modulo:1-2"><span class="ARCKHÉ-ring__value" data-ARCKHÉ-meter-pct="">0%</span><svg viewbox="0 0 36 36"><circle class="ARCKHÉ-ring__track" cx="18" cy="18" r="16"></circle><circle class="ARCKHÉ-ring__bar" cx="18" cy="18" data-ARCKHÉ-ring="" r="16"></circle></svg></div>
+<div class="text-xs text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 6</div>
 </div>
 </div>
 </div>
@@ -199,37 +199,37 @@
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:grid lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
 <aside class="hidden lg:block">
-<nav aria-label="Índice do módulo" class="sticky top-24" data-inema-toc="">
+<nav aria-label="Índice do módulo" class="sticky top-24" data-ARCKHÉ-toc="">
 <p class="text-xs uppercase tracking-wide text-neutral-500 mb-2">Neste módulo</p>
-<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-inema-section-counter="">1 de 6</span></p>
+<p class="text-sm text-neutral-400 mb-3">Seçêo <span data-ARCKHÉ-section-counter="">1 de 6</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-1">1. O que é um grafo</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Entidades e relações</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Comunidades e Leiden</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-4">4. God nodes (os hubs)</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-5">5. GraphRAG: mapa vs busca</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Por que o mapa ajuda</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-1">1. O que é um grafo</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Entidades e relações</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Comunidades e Leiden</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-4">4. God nodes (os hubs)</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-5">5. GraphRAG: mapa vs busca</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Por que o mapa ajuda</a></li>
 </ol>
 </nav>
 </aside>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-1" id="topico-1">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-4">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">1</span>
 <h2 class="text-2xl font-bold">⚪ O que é um grafo (nós e arestas)</h2>
 </div>
-<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
+<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t1-p1">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t1-p1">
               No fundo, todo o curso gira em torno de uma estrutura simples: o <strong class="text-emerald-400">grafo</strong>. Nêo tem mistério — é a forma mais antiga de desenhar "coisas e como elas se ligam". Pense num mapa de metrô: cada estaçêo é um ponto, e cada trilho é uma linha que liga duas estações. O grafo do Graphify é exatamente isso, só que em vez de estações ele guarda <em>ideias</em>, e em vez de trilhos ele guarda <em>relações entre ideias</em>.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? O que é um "grafo"</h3>
 <p class="text-neutral-300 text-sm">Um <strong>grafo</strong> é um conjunto de pontos ligados por linhas. Os pontos chamam-se <strong>nós</strong> (em inglês, <em>nodes</em>) e as linhas chamam-se <strong>arestas</strong> (em inglês, <em>edges</em>). Nada além disso: nó = coisa, aresta = ligaçêo entre duas coisas. Esqueça a palavra "grafo" assustadora — é o mapa de metrô.</p>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t1-p2">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t1-p2">
               Dois detalhes dêo poder ao grafo. O primeiro é a <strong class="text-emerald-400">vizinhança</strong>: a partir de um nó, você enxerga imediatamente quem está ligado a ele — os vizinhos diretos. O segundo é o <strong class="text-emerald-400">grau</strong> de um nó: quantas arestas saem dele, ou seja, com quantas outras coisas ele se conecta. Um nó de grau alto é um cruzamento movimentado; um nó de grau baixo é um beco. Guarde esses dois — eles voltam nos tópicos 3 e 4.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
@@ -283,36 +283,36 @@
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span>
-<span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span>
+<span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-2" id="topico-2">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-4">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">2</span>
 <h2 class="text-2xl font-bold">🔗 Entidades, relações e procedência</h2>
 </div>
-<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
+<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t2-p1">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t2-p1">
               "Nó" e "aresta" sêo os nomes genéricos. Quando o Graphify olha de fato para o seu conteúdo, ele dá nomes mais específicos: cada nó vira uma <strong class="text-emerald-400">entidade</strong> e cada aresta vira uma <strong class="text-emerald-400">relaçêo tipada</strong>. É o mesmo grafo do tópico 1 — só com vocabulário preciso por cima.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? "Entidade" e "relaçêo tipada"</h3>
 <p class="text-neutral-300 text-sm">Uma <strong>entidade</strong> é uma coisa identificável: uma ideia, uma funçêo de código, uma pessoa, um conceito ("Context Window", "Hooks"). Uma <strong>relaçêo tipada</strong> é uma aresta que <em>diz o que ela é</em> — nêo só "A liga em B", mas "A <em>usa</em> B", "A <em>é parte de</em> B", "A <em>depende de</em> B". O "tipo" é o rótulo da ligaçêo.</p>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t2-p2">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t2-p2">
               Cada entidade e cada relaçêo carrega ainda uma etiqueta invisível: a <strong class="text-emerald-400">procedência</strong> — de qual arquivo aquilo veio. É o que permite o agente dizer "isto eu li em <code class="font-mono text-xs bg-dark-900 px-1 rounded">hooks.md</code>, linha tal" em vez de inventar. Procedência é o que separa um mapa confiável de um chute bonito.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? "Procedência" e "reconciliaçêo"</h3>
 <p class="text-neutral-300 text-sm"><strong>Procedência</strong> (em inglês, <em>provenance</em>) = o registro da origem de cada pedaço de conhecimento: qual documento o gerou. <strong>Reconciliaçêo</strong> = juntar apelidos do mesmo conceito num só nó (ex.: "janela de contexto", "context window" e "ctx window" viram <em>uma</em> entidade, nêo três). Sem reconciliar, o mesmo conceito apareceria espalhado.</p>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t2-p3">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t2-p3">
               Aqui mora uma pegadinha de vocabulário que vale guardar: o vídeo que inspira o curso fala em "conceitos" e "conexões"; a ferramenta, na prática, diz "entidades" e "relações". Sêo a mesma coisa com nomes diferentes. Saber os dois evita você travar quando o <code class="font-mono text-xs bg-dark-900 px-1 rounded">GRAPH_REPORT.md</code> usar um termo e o vídeo usar outro.
             </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
@@ -343,35 +343,35 @@
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-3" id="topico-3">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-4">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">3</span>
 <h2 class="text-2xl font-bold">🫧 Comunidades e o algoritmo Leiden</h2>
 </div>
-<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
+<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t3-p1">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t3-p1">
               Quando você tem centenas de nós, repara que alguns grupos conversam muito entre si e pouco com o resto — como panelinhas numa festa. Esses grupos têm um nome: <strong class="text-emerald-400">comunidades</strong>. No diagrama do tópico 1, o tracejado cercava uma delas. Comunidades sêo o que transforma um emaranhado de pontos num conjunto de <em>temas</em> legível.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? "Comunidade" e "clustering"</h3>
 <p class="text-neutral-300 text-sm">Uma <strong>comunidade</strong> é um grupo de nós muito ligados entre si e pouco ligados a quem está de fora. <strong>Clustering</strong> (agrupamento) é o nome geral da tarefa de "achar os grupos naturais" dentro de um monte de dados. Detectar comunidades é fazer clustering em cima de um grafo.</p>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t3-p2">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t3-p2">
               Mas quem decide onde uma comunidade começa e a outra termina? Um algoritmo — e o que o Graphify usa chama-se <strong class="text-emerald-400">Leiden</strong>. Você nêo precisa entender a matemática dele; precisa saber que ele varre o grafo sozinho e devolve os grupos, sem você ter de marcar nada à mêo.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? O que é o "Leiden"</h3>
 <p class="text-neutral-300 text-sm"><strong>Leiden</strong> é o nome de um algoritmo de detecçêo de comunidades (batizado pela cidade holandesa). Para você, ele é uma caixa-preta útil: entra um grafo, saem grupos coesos. É o sucessor de um algoritmo mais antigo (Louvain), com grupos mais "bem fechados".</p>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t3-p3">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t3-p3">
               Por dentro, em linguagem de gente, o Leiden faz três passos repetidamente até nêo conseguir melhorar:
             </p>
 <div class="space-y-5 mb-6">
@@ -402,28 +402,28 @@
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-4" id="topico-4">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-4">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">4</span>
 <h2 class="text-2xl font-bold">🌟 God nodes: os hubs do grafo</h2>
 </div>
-<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
+<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t4-p1">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t4-p1">
               Lembra do nó brilhante no centro do diagrama? Aquele era o <strong class="text-emerald-400">god node</strong>: a entidade mais conectada do grafo, o cruzamento por onde quase tudo passa. Num grafo da documentaçêo do Claude Code, "Context Window" costuma ser um god node — dezenas de outros conceitos puxam para ele.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? O que é um "god node" / "hub"</h3>
 <p class="text-neutral-300 text-sm">Um <strong>god node</strong> (literalmente "nó-deus") é simplesmente o nó de <strong>grau</strong> mais alto — o que tem mais arestas. Outro nome para ele é <strong>hub</strong> (centro). Nêo tem nada de místico: é o aeroporto de conexões do grafo. O <code class="font-mono text-xs bg-dark-900 px-1 rounded">GRAPH_REPORT.md</code> já lista os god nodes pra você.</p>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t4-p2">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t4-p2">
               Por que você se importa? Porque os god nodes sêo os <strong>melhores pontos de partida</strong> para perguntar ao agente. Em vez de começar por um conceito obscuro de canto, você começa por um hub e deixa o agente "descer" pela vizinhança. É o equivalente a entrar numa cidade pela estaçêo central, nêo por um beco.
             </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
@@ -458,28 +458,28 @@
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-5" id="topico-5">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-4">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">5</span>
 <h2 class="text-2xl font-bold">🗺️ GraphRAG: mapa vs busca</h2>
 </div>
-<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
+<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t5-p1">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t5-p1">
               Agora juntamos tudo numa sigla que você vai ouvir muito: <strong class="text-emerald-400">GraphRAG</strong>. Para entendê-la, primeiro o "RAG" simples. Quando um agente precisa responder sobre documentos que nêo cabem na janela, ele <em>busca</em> os trechos mais relevantes e os cola no contexto antes de responder. Isso é RAG.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Novo aqui? O que é "RAG"</h3>
 <p class="text-neutral-300 text-sm"><strong>RAG</strong> = <em>Retrieval-Augmented Generation</em> (geraçêo aumentada por recuperaçêo). Em português claro: antes de responder, o sistema <strong>recupera</strong> (busca) os pedaços de texto úteis e entrega ao modelo. A <strong>recuperaçêo</strong> é só esse passo de "ir buscar o que importa". RAG comum trabalha com <em>chunks</em> — trechos soltos de texto.</p>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t5-p2">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t5-p2">
               O problema do RAG comum: ele entrega uma <strong>pilha de trechos sem relaçêo entre si</strong>. O modelo recebe páginas avulsas e precisa adivinhar como elas se conectam. O <strong class="text-emerald-400">GraphRAG</strong> resolve isso fazendo a recuperaçêo <em>por cima do grafo</em>: além dos trechos, ele entrega as <strong>relações</strong> entre eles — vizinhança, comunidade, god nodes. Texto + mapa, nêo texto solto.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
@@ -533,28 +533,28 @@
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-6" id="topico-6">
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-4">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">6</span>
 <h2 class="text-2xl font-bold">⚡ Por que o mapa ajuda o agente</h2>
 </div>
-<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
+<button aria-pressed="false" class="flex-shrink-0 inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span class="hidden sm:inline">Tenho dúvida</span></button>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t6-p1">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t6-p1">
               Fechando o módulo, o payoff prático. Com o mapa na mêo, o Claude Code sabe <em>o que está perto de quê</em>. Você pergunta sobre sub-agentes; em vez de varrer o repositório inteiro com <code class="font-mono text-xs bg-dark-900 px-1 rounded">grep</code>, ele pula direto para o nó "Subagentes", lê a <strong class="text-emerald-400">vizinhança</strong> dele — "agent teams", "contexto separado", "orquestraçêo" — e responde no contexto certo.
             </p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-5 mb-6">
 <h3 class="text-base font-semibold text-primary mb-2 flex items-center"><span class="mr-2">🔰</span> Lembrete rápido: "navegar a vizinhança"</h3>
 <p class="text-neutral-300 text-sm"><strong>Navegar a vizinhança</strong> é ir de um nó aos seus vizinhos diretos e, de lá, aos vizinhos deles — seguindo as arestas como se fossem corredores. É exatamente o que o grep <em>nêo</em> faz: ele acha onde a palavra aparece, mas nêo sabe seguir as conexões. O mapa, sim.</p>
 </div>
-<p class="text-neutral-300 mb-5 leading-relaxed" data-inema-block="m1-2-t6-p2">
+<p class="text-neutral-300 mb-5 leading-relaxed" data-ARCKHÉ-block="m1-2-t6-p2">
               O ganho cresce com o tamanho do projeto. Em repositórios grandes, ler tudo é caro e lento; seguir o mapa é barato e direto. Esse é o argumento de venda do stack inteiro: <strong>respostas melhores em bases grandes</strong>, porque o agente gasta a janela de contexto no que importa, guiado pelas relações em vez de adivinhando.
             </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
@@ -585,20 +585,20 @@
 </div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/30 transition-colors" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">○</span><span aria-hidden="true" class="ARCKHÉ-ico-done">●</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
 <!-- CHECAGEM LEVE -->
-<div class="inema-check mb-12 bg-dark-800 border border-dark-600 rounded-xl p-6" data-inema-check="modulo-1-2#q1">
+<div class="ARCKHÉ-check mb-12 bg-dark-800 border border-dark-600 rounded-xl p-6" data-ARCKHÉ-check="modulo-1-2#q1">
 <p class="font-medium mb-4">✋ Auto-recuperaçêo (opcional, nêo bloqueia): o que é um <strong>god node</strong> no grafo?</p>
-<div class="inema-check-options space-y-2">
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="0" type="button">O nó que o algoritmo Leiden marca como início de cada comunidade.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="1" type="button">A entidade mais conectada (grau mais alto) — o hub por onde quase tudo passa.</button>
-<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-inema-check-option="2" type="button">Um nó especial criado à mêo para guardar as regras do projeto.</button>
+<div class="ARCKHÉ-check-options space-y-2">
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="0" type="button">O nó que o algoritmo Leiden marca como início de cada comunidade.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="1" type="button">A entidade mais conectada (grau mais alto) — o hub por onde quase tudo passa.</button>
+<button class="block w-full text-left px-4 py-2 rounded-lg bg-dark-700 border border-dark-600 hover:bg-dark-600 transition-colors text-sm" data-ARCKHÉ-check-option="2" type="button">Um nó especial criado à mêo para guardar as regras do projeto.</button>
 </div>
-<div aria-live="polite" class="mt-4 text-sm" data-inema-check-feedback="" role="status"></div>
+<div aria-live="polite" class="mt-4 text-sm" data-ARCKHÉ-check-feedback="" role="status"></div>
 </div>
 <!-- RESUMO -->
 <section class="mb-12">
@@ -627,22 +627,22 @@
 </main>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Segundo Cérebro pro Claude Code · Módulo 1.2 · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p>
+<p>Segundo Cérebro pro Claude Code · Módulo 1.2 · <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p>
 </div>
 </footer>
 <script>
     function toggleTopic(button){ const it=button.closest('.topic-item'); if(!it) return; const ex=it.querySelector('.topic-explanation'); const card=button.closest('.bg-dark-800')||document; card.querySelectorAll('.topic-explanation.active').forEach(e=>{ if(e!==ex) e.classList.remove('active'); }); const open=!ex.classList.contains('active'); ex.classList.toggle('active'); button.setAttribute('aria-expanded', open?'true':'false'); }
-    (function(){ const tt=document.getElementById('theme-toggle'); const di=document.getElementById('theme-toggle-dark-icon'); const li=document.getElementById('theme-toggle-light-icon'); const h=document.documentElement; function sync(){ const d=h.classList.contains('dark'); if(d){ li.classList.remove('hidden'); di.classList.add('hidden'); } else { di.classList.remove('hidden'); li.classList.add('hidden'); } } sync(); tt&&tt.addEventListener('click',()=>{ const goDark=!h.classList.contains('dark'); h.classList.toggle('dark',goDark); try{ if(window.INEMA&&INEMA.setPref) INEMA.setPref('theme', goDark?'inema-dark':'claro'); else localStorage.setItem('theme', goDark?'dark':'light'); }catch(e){} sync(); }); })();
+    (function(){ const tt=document.getElementById('theme-toggle'); const di=document.getElementById('theme-toggle-dark-icon'); const li=document.getElementById('theme-toggle-light-icon'); const h=document.documentElement; function sync(){ const d=h.classList.contains('dark'); if(d){ li.classList.remove('hidden'); di.classList.add('hidden'); } else { di.classList.remove('hidden'); li.classList.add('hidden'); } } sync(); tt&&tt.addEventListener('click',()=>{ const goDark=!h.classList.contains('dark'); h.classList.toggle('dark',goDark); try{ if(window.ARCKHÉ&&ARCKHÉ.setPref) ARCKHÉ.setPref('theme', goDark?'ARCKHÉ-dark':'claro'); else localStorage.setItem('theme', goDark?'dark':'light'); }catch(e){} sync(); }); })();
     function openModal(id){ const m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(m=>m.classList.add('hidden')); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
-    document.addEventListener('click', e=>{ const b=e.target.closest('[data-inema-resume]'); if(b&&window.INEMA&&INEMA.resume) INEMA.resume(); });
+    document.addEventListener('click', e=>{ const b=e.target.closest('[data-ARCKHÉ-resume]'); if(b&&window.ARCKHÉ&&ARCKHÉ.resume) ARCKHÉ.resume(); });
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') {
-      window.INEMA.init();
-      if (INEMA.registerCheck) INEMA.registerCheck('modulo-1-2#q1', { answer: 1, explain: { 0: 'Nêo — o Leiden detecta comunidades, mas nêo "elege" god nodes; o god node é só o nó de grau mais alto, independente de comunidade.', 1: 'Isso. God node = a entidade mais conectada (grau mais alto), o hub do grafo e o melhor ponto de partida para perguntar.', 2: 'Nêo — god nodes nêo sêo feitos à mêo nem guardam regras; eles emergem das conexões. Regras ficam no CLAUDE.md (módulo 1.1).' } });
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') {
+      window.ARCKHÉ.init();
+      if (ARCKHÉ.registerCheck) ARCKHÉ.registerCheck('modulo-1-2#q1', { answer: 1, explain: { 0: 'Nêo — o Leiden detecta comunidades, mas nêo "elege" god nodes; o god node é só o nó de grau mais alto, independente de comunidade.', 1: 'Isso. God node = a entidade mais conectada (grau mais alto), o hub do grafo e o melhor ponto de partida para perguntar.', 2: 'Nêo — god nodes nêo sêo feitos à mêo nem guardam regras; eles emergem das conexões. Regras ficam no CLAUDE.md (módulo 1.1).' } });
     }
   </script>
 </body>

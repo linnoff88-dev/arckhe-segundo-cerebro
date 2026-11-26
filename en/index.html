@@ -4,36 +4,36 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="segundo-cerebro" name="inema-course"/>
+<meta content="segundo-cerebro" name="ARCKHÉ-course"/>
 <title>Second Brain for Claude Code | Graphify + Obsidian</title>
 <!-- 1) ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o){ var r={}; for (var x in o) r[x]=o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) { var parsed = JSON.parse(raw); if (parsed && typeof parsed==='object'){ for (var k in DEF) if (parsed[k]!=null) p[k]=parsed[k]; } }
-        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='inema-dark'; }
+        else { var legacy = localStorage.getItem('theme'); if (legacy==='light') p.theme='claro'; else if (legacy==='dark') p.theme='ARCKHÉ-dark'; }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark:true,  attr:null,        cs:'dark'  },
+        'ARCKHÉ-dark': { dark:true,  attr:null,        cs:'dark'  },
         'claro':      { dark:false, attr:null,        cs:'light' },
         'sepia':      { dark:false, attr:'sepia',     cs:'light' },
         'foco':       { dark:null,  attr:'foco',      cs:null    },
         'contraste':  { dark:true,  attr:'contraste', cs:'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark'); else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
       html.style.colorScheme = (t.cs ? t.cs : (html.classList.contains('dark') ? 'dark' : 'light'));
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style; var scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale/100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale/100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -64,7 +64,7 @@
 <!-- 3) learn.css -->
 <link href="../assets/learn.css" rel="stylesheet"/>
 <!-- 4) Manifesto do curso (IDÊNTICO em todas as páginas) -->
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "segundo-cerebro",
     "tracks": [
@@ -161,8 +161,8 @@
       .wf-a:nth-child(2){animation-delay:.25s} .wf-a:nth-child(3){animation-delay:.5s} .wf-a:nth-child(4){animation-delay:.75s}
     }
   </style>
-<link href="https://inematds.github.io/segundo-cerebro/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/segundo-cerebro/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/segundo-cerebro/es/" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/arckhe-/" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/" hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#conteudo">Skip to content</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -174,7 +174,7 @@
 <span class="font-bold text-lg hidden sm:inline">Second Brain</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="curso/trilha1/index.html">
@@ -186,54 +186,54 @@
 <a class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="curso/trilha3/index.html">
 <span class="sm:hidden">T3</span><span class="hidden sm:inline">Advanced use</span>
 </a>
-<button class="hidden md:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-inema-journey-open="" type="button">
+<button class="hidden md:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors ml-1" data-ARCKHÉ-journey-open="" type="button">
 <span aria-hidden="true">◷</span><span>My journey</span>
-<span class="inema-journey-badge hidden" data-count="0" data-inema-journey-badge=""></span>
+<span class="ARCKHÉ-journey-badge hidden" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <div class="relative">
-<button aria-expanded="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" type="button">
+<button aria-expanded="false" class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" type="button">
 <span aria-hidden="true">◑</span><span class="hidden sm:inline">Appearance</span>
 </button>
-<div class="inema-appearance-pop" data-inema-appearance="">
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="">
 <p class="text-xs text-neutral-400 mb-1">Theme</p>
-<div class="inema-segment">
-<button data-inema-set-theme="inema-dark">Dark</button>
-<button data-inema-set-theme="claro">Clear</button>
-<button data-inema-set-theme="sepia">Sepia</button>
-<button data-inema-set-theme="foco">Focus</button>
-<button data-inema-set-theme="contraste">High contrast</button>
+<div class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-theme="ARCKHÉ-dark">Dark</button>
+<button data-ARCKHÉ-set-theme="claro">Clear</button>
+<button data-ARCKHÉ-set-theme="sepia">Sepia</button>
+<button data-ARCKHÉ-set-theme="foco">Focus</button>
+<button data-ARCKHÉ-set-theme="contraste">High contrast</button>
 </div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">Source</p>
-<div class="inema-segment">
-<button data-inema-set-font="inter">Inter</button>
-<button data-inema-set-font="system">System</button>
-<button data-inema-set-font="leitura">Reading</button>
+<div class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-font="inter">Inter</button>
+<button data-ARCKHÉ-set-font="system">System</button>
+<button data-ARCKHÉ-set-font="leitura">Reading</button>
 </div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">Size</p>
-<div class="inema-segment">
-<button data-inema-set-fontscale="100">A</button>
-<button data-inema-set-fontscale="112">A+</button>
-<button data-inema-set-fontscale="125">A++</button>
+<div class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-fontscale="100">A</button>
+<button data-ARCKHÉ-set-fontscale="112">A+</button>
+<button data-ARCKHÉ-set-fontscale="125">A++</button>
 </div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">Width</p>
-<div class="inema-segment">
-<button data-inema-set-linewidth="60">Narrow</button>
-<button data-inema-set-linewidth="68">Medium</button>
-<button data-inema-set-linewidth="75">Wide</button>
+<div class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-linewidth="60">Narrow</button>
+<button data-ARCKHÉ-set-linewidth="68">Medium</button>
+<button data-ARCKHÉ-set-linewidth="75">Wide</button>
 </div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">In-between line</p>
-<div class="inema-segment">
-<button data-inema-set-leading="1.45">Compact</button>
-<button data-inema-set-leading="1.7">Comfortable</button>
+<div class="ARCKHÉ-segment">
+<button data-ARCKHÉ-set-leading="1.45">Compact</button>
+<button data-ARCKHÉ-set-leading="1.7">Comfortable</button>
 </div>
 <p class="text-xs text-neutral-400 mt-3 mb-1">Accent</p>
-<div class="inema-accent-grid">
-<button data-inema-set-accent="emerald" title="Emerald"></button>
-<button data-inema-set-accent="blue" title="Blue"></button>
-<button data-inema-set-accent="purple" title="Purple"></button>
-<button data-inema-set-accent="amber" title="Amber"></button>
-<button data-inema-set-accent="teal" title="Teal"></button>
-<button data-inema-set-accent="rose" title="Rose"></button>
+<div class="ARCKHÉ-accent-grid">
+<button data-ARCKHÉ-set-accent="emerald" title="Emerald"></button>
+<button data-ARCKHÉ-set-accent="blue" title="Blue"></button>
+<button data-ARCKHÉ-set-accent="purple" title="Purple"></button>
+<button data-ARCKHÉ-set-accent="amber" title="Amber"></button>
+<button data-ARCKHÉ-set-accent="teal" title="Teal"></button>
+<button data-ARCKHÉ-set-accent="rose" title="Rose"></button>
 </div>
 </div>
 </div>
@@ -258,21 +258,21 @@
           The result is a map the agent consults on demand—instead of just doing <code class="font-mono text-sm bg-dark-800 px-1.5 py-0.5 rounded">grep</code> blindly.
         </p>
 <p class="text-base text-neutral-400 max-w-3xl mb-8">
-          A 100% hands-on course in Portuguese, following the INEMA standard. Move beyond theory, install everything, and finish with a living knowledge vault inside your project.
+          A 100% hands-on course in Portuguese, following the ARCKHÉ standard. Move beyond theory, install everything, and finish with a living knowledge vault inside your project.
         </p>
 <div class="flex flex-col sm:flex-row gap-3 mb-10">
 <a class="text-center px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-semibold transition-colors" href="curso/trilha2/index.html">▶ Start with the step-by-step guide</a>
 <a class="text-center px-6 py-3 bg-dark-700 hover:bg-dark-600 text-neutral-200 rounded-lg font-semibold transition-colors" href="curso/trilha1/index.html">Understand the fundamentals</a>
-<button class="text-center px-6 py-3 bg-dark-800 border border-dark-600 hover:bg-dark-700 text-neutral-300 rounded-lg font-semibold transition-colors" data-inema-resume="" type="button">↺ Continue where I left off</button>
+<button class="text-center px-6 py-3 bg-dark-800 border border-dark-600 hover:bg-dark-700 text-neutral-300 rounded-lg font-semibold transition-colors" data-ARCKHÉ-resume="" type="button">↺ Continue where I left off</button>
 </div>
 <!-- Progresso do curso -->
-<div aria-label="Course progress" aria-valuemax="100" aria-valuemin="0" class="inema-meter max-w-md bg-dark-800/70 border border-dark-600 rounded-xl p-4" data-inema-meter="curso" role="progressbar">
+<div aria-label="Course progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter max-w-md bg-dark-800/70 border border-dark-600 rounded-xl p-4" data-ARCKHÉ-meter="curso" role="progressbar">
 <div class="flex items-center justify-between mb-2">
 <span class="text-sm text-neutral-400">Your course progress</span>
-<span class="text-sm font-bold text-emerald-400" data-inema-meter-pct="">0%</span>
+<span class="text-sm font-bold text-emerald-400" data-ARCKHÉ-meter-pct="">0%</span>
 </div>
-<div class="inema-bar"><div class="inema-bar__fill" data-inema-meter-fill=""></div></div>
-<span class="text-xs text-neutral-500 mt-2 inline-block" data-inema-meter-frac="">0 of 84</span>
+<div class="ARCKHÉ-bar"><div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill=""></div></div>
+<span class="text-xs text-neutral-500 mt-2 inline-block" data-ARCKHÉ-meter-frac="">0 of 84</span>
 </div>
 </div>
 </header>
@@ -360,7 +360,7 @@
 <a class="group bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6 hover:border-emerald-500/60 transition-all" href="curso/trilha1/index.html">
 <div class="flex items-center justify-between mb-3">
 <span class="text-emerald-400 font-bold text-sm">TRACK 1</span>
-<div aria-label="Track 1 progress" class="inema-ring inema-ring--sm" data-inema-meter="trilha:1"><span class="inema-ring__value" data-inema-meter-pct="">0%</span><svg viewbox="0 0 36 36"><circle class="inema-ring__track" cx="18" cy="18" r="16"></circle><circle class="inema-ring__bar" cx="18" cy="18" data-inema-ring="" r="16"></circle></svg></div>
+<div aria-label="Track 1 progress" class="ARCKHÉ-ring ARCKHÉ-ring--sm" data-ARCKHÉ-meter="trilha:1"><span class="ARCKHÉ-ring__value" data-ARCKHÉ-meter-pct="">0%</span><svg viewbox="0 0 36 36"><circle class="ARCKHÉ-ring__track" cx="18" cy="18" r="16"></circle><circle class="ARCKHÉ-ring__bar" cx="18" cy="18" data-ARCKHÉ-ring="" r="16"></circle></svg></div>
 </div>
 <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition-colors">🧠 Fundamentals</h3>
 <p class="text-sm text-neutral-300 mb-3">The why: agent memory, knowledge graph, Graphify, and Obsidian demystified.</p>
@@ -369,7 +369,7 @@
 <a class="group bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6 hover:border-blue-500/60 transition-all" href="curso/trilha2/index.html">
 <div class="flex items-center justify-between mb-3">
 <span class="text-blue-400 font-bold text-sm">TRACK 2</span>
-<div aria-label="Track 2 progress" class="inema-ring inema-ring--sm" data-inema-meter="trilha:2"><span class="inema-ring__value" data-inema-meter-pct="">0%</span><svg viewbox="0 0 36 36"><circle class="inema-ring__track" cx="18" cy="18" r="16"></circle><circle class="inema-ring__bar" cx="18" cy="18" data-inema-ring="" r="16"></circle></svg></div>
+<div aria-label="Track 2 progress" class="ARCKHÉ-ring ARCKHÉ-ring--sm" data-ARCKHÉ-meter="trilha:2"><span class="ARCKHÉ-ring__value" data-ARCKHÉ-meter-pct="">0%</span><svg viewbox="0 0 36 36"><circle class="ARCKHÉ-ring__track" cx="18" cy="18" r="16"></circle><circle class="ARCKHÉ-ring__bar" cx="18" cy="18" data-ARCKHÉ-ring="" r="16"></circle></svg></div>
 </div>
 <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">🛠️ Practical step-by-step guide</h3>
 <p class="text-sm text-neutral-300 mb-3">From zero to vault: install, download the source, run Graphify, export, and integrate.</p>
@@ -378,7 +378,7 @@
 <a class="group bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 hover:border-purple-500/60 transition-all" href="curso/trilha3/index.html">
 <div class="flex items-center justify-between mb-3">
 <span class="text-purple-400 font-bold text-sm">TRACK 3</span>
-<div aria-label="Track 3 progress" class="inema-ring inema-ring--sm" data-inema-meter="trilha:3"><span class="inema-ring__value" data-inema-meter-pct="">0%</span><svg viewbox="0 0 36 36"><circle class="inema-ring__track" cx="18" cy="18" r="16"></circle><circle class="inema-ring__bar" cx="18" cy="18" data-inema-ring="" r="16"></circle></svg></div>
+<div aria-label="Track 3 progress" class="ARCKHÉ-ring ARCKHÉ-ring--sm" data-ARCKHÉ-meter="trilha:3"><span class="ARCKHÉ-ring__value" data-ARCKHÉ-meter-pct="">0%</span><svg viewbox="0 0 36 36"><circle class="ARCKHÉ-ring__track" cx="18" cy="18" r="16"></circle><circle class="ARCKHÉ-ring__bar" cx="18" cy="18" data-ARCKHÉ-ring="" r="16"></circle></svg></div>
 </div>
 <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">🚀 Real-world and advanced use</h3>
 <p class="text-sm text-neutral-300 mb-3">Ask using the graph, build a Claude OS, decide between code and docs, and keep the vault alive.</p>
@@ -413,7 +413,7 @@
 </main>
 <footer class="border-t border-dark-600 py-8 mt-8">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>Second Brain for Claude Code · INEMA Course · 2026 · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a></p>
+<p>Second Brain for Claude Code · ARCKHÉ Course · 2026 · <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a></p>
 <p class="mt-1 text-xs">Based on the Graphify + Obsidian + Claude Code concept. Educational material.</p>
 </div>
 </footer>
@@ -446,7 +446,7 @@
         const goDark = !html.classList.contains('dark');
         html.classList.toggle('dark', goDark);
         try {
-          if (window.INEMA && INEMA.setPref) INEMA.setPref('theme', goDark ? 'inema-dark' : 'claro');
+          if (window.ARCKHÉ && ARCKHÉ.setPref) ARCKHÉ.setPref('theme', goDark ? 'ARCKHÉ-dark' : 'claro');
           else localStorage.setItem('theme', goDark ? 'dark' : 'light');
         } catch (e) {}
         sync();
@@ -455,12 +455,12 @@
     function openModal(id){ const m=document.getElementById(id); if(m){ m.classList.remove('hidden'); document.body.style.overflow='hidden'; } }
     function closeModal(){ document.querySelectorAll('.modal').forEach(m=>m.classList.add('hidden')); document.body.style.overflow='auto'; }
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-    document.addEventListener('click', e => { const b = e.target.closest('[data-inema-resume]'); if (b && window.INEMA && INEMA.resume) INEMA.resume(); });
+    document.addEventListener('click', e => { const b = e.target.closest('[data-ARCKHÉ-resume]'); if (b && window.ARCKHÉ && ARCKHÉ.resume) ARCKHÉ.resume(); });
   </script>
 <!-- LEARN LAYER -->
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') window.INEMA.init();
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') window.ARCKHÉ.init();
   </script>
 </body>
 </html>

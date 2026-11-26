@@ -249,4 +249,4 @@ Assim o agente consulta o grafo programaticamente (resources `graphify://report`
 
 ---
 
-*Material educativo INEMA · acompanha o curso "Segundo Cérebro pro Claude Code" · https://inema.club*
+*Material educativo ARCKHÉ · acompanha o curso "Segundo Cérebro pro Claude Code" · https://ARCKHÉ AI*
